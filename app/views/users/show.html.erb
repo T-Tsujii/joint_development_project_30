@@ -1,8 +1,6 @@
 <h1>ユーザー 詳細</h1>
-<% @users.each do |user| %> 
-  <p>
-    <%= user.name %>
-    <%= user.age %>
-  </p>
-<% end %>
+<p>
+  <%= @users.name %>
+  <%= @users.age %>
+</p>
 <%= link_to "一覧画面へ", users_path %>
